@@ -1,0 +1,64 @@
+<!--
+    Michael Kellems
+    9/4/24
+    CIT 215
+    Prof. Kane
+-->
+
+<html>
+    <head>
+        <h1 class = "display"> Made by Michael Kellems for CIT 215.</h1>
+    </head>
+    <body>
+        <label><h2  class = "mainlabel" >What is the minimum age for your dog? </h2></label>
+        <input class = "inpbox" value="please input age here" onclick="if(document.querySelector('.inpbox').value == 'please input age here'){document.querySelector('.inpbox').value = ''}"> </input>
+        <button class = "clicker" onclick="getDogs(parseInt(document.querySelector('.inpbox').value))"> I'm feeling doggy! </button>
+        <div class = "resultsarea"> <p class = "results"> results here </p> </div>
+    </body>
+    <script src = "script.js">
+    </script> 
+
+    <style>
+       .mainlabel {
+        width: 50%;
+        height: 10%;
+        margin-top: 10%;
+        margin-left: 25%;
+        background-color: orangered;
+        text-align: center;
+        padding:0px;
+        margin-bottom:0px;
+        -webkit-text-fill-color: white;
+       }
+
+       .inpbox {
+        width: 25%;
+        height: 25px;
+        padding:0px;
+        margin-bottom: 10px;
+        margin-left: 25%;
+       }
+
+       .clicker {
+        width: 25%;
+        height: 25px;
+        padding:0px;
+        margin-right: -25%;
+       }
+
+       .resultsarea {
+        width:50%;
+        height: 50%;
+        margin-left:25%;
+        border: 1px;
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid;
+        margin-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-y: scroll;
+        overflow-x: auto;
+       }
+    </style>
+</html>

@@ -66,6 +66,16 @@ const allDogs =
         breed: "Siberian Husky",
         age: 1
     },
+    {
+        dogName: "Appa",
+        breed: "American Shorthair",
+        age: 3
+    },
+    {
+        dogName: "Rosies",
+        breed: "Caliby",
+        age: 0
+    },
 ]
 
 function getDogs(ageval) {
